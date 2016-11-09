@@ -1,4 +1,4 @@
-from ..segment_tree.segmenttree import SegmentTree
+from ..segment_tree.segmenttree import *
 import unittest
 
 
@@ -18,8 +18,40 @@ class SegmentTree_Test(unittest.TestCase):
 		"""Test creating a segment tree
 		"""
 		st = SegmentTree(8)
-		self.assertEqual(st.size, 8)
-		self.assertEqual(st.data, [])
+		#self.assertEqual(st.size, 8)
+		#self.assertEqual(len(st.data), 8)
+
+	def testInitializeWithArray(self):
+		"""Test creating a segment tree using a provided array
+		"""
+		st = SegmentTree(8)
+		values = [5, 3, 2, 5, 7, 2, 1, 9]
+		st.initializeTree(values)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
